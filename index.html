@@ -1008,7 +1008,7 @@ async function notifyLine(day, shopId) {
   });
   const data=await response.json();
   if(!response.ok)throw Error(data.message||'通知服務無法使用。');
-  status.textContent='LINE 已接受開團通知。';
+  status.textContent=data.message||'LINE 通知已處理。';
  }catch(error){
   status.textContent='店家已發布，LINE 通知未確認。'+error.message;
   retry.onclick=()=>void notifyLine(day,shopId);

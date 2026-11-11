@@ -1,0 +1,8 @@
+{
+  "id": "./",
+  "name": "呷飯阿",
+  "short_name": "呷飯阿",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone"
+}
